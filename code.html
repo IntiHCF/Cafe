@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DUBLIN 8 | BRUTALIST ROASTERS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#fad02c", // Neon Yellow
+              "on-primary": "#131313",
+              "surface": "#131313", // Charcoal
+              "on-surface": "#f0f0f0",
+              "surface-variant": "#1c1b1b",
+              "outline": "#393939",
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk", "sans-serif"],
+              "body": ["Space Grotesk", "sans-serif"],
+              "marker": ["Permanent Marker", "cursive"],
+            },
+            borderRadius: {
+                "none": "0",
+                "DEFAULT": "0",
+                "lg": "0",
+                "xl": "0",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.zine-border {
+    border: 3px solid #fad02c
+    }
+.poster-shadow {
+    box-shadow: 8px 8px 0 0 #fad02c
+    }
+.noise-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDGfRVvkdRCcy7wGCDP15qIZXw4UXZS5U6jDZAnguXEnonwNRHUGp8W6NSTNQCEeu4PwERQsbO294Hcm6A5PqjTETNWFBt02mbFd3K5HydgGpZP4PMHL7e3W2PvqXKm5Ai9lGILT7maYsMloPMTnNfOqFV8m3Ne5uzdtd7B2L_1-v6V53OIzFG3xxRb7yylUZdueNToGJuoa_18J-P8qGZJA0aWYqzm6J91GEMa2kkb7ye2zZ-pz6hGWgTsP2slAe9QpLtPQZj8jw)
+    }
+.skew-hover:hover {
+    transform: skewx(-2deg)
+    }</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary noise-bg">
+<!-- TopAppBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 rounded-none border-none bg-[#131313] dark:bg-[#131313] backdrop-blur-xl bg-opacity-80 shadow-[4px_4px_0px_0px_rgba(77,70,51,1)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-full mx-auto relative">
+<div class="flex items-center gap-4">
+<button class="text-[#fad02c] dark:text-[#fad02c] hover:bg-[#393939] transition-all duration-75 ease-linear hover:skew-x-1 active:translate-x-1 active:translate-y-1 active:shadow-none p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-3xl font-black tracking-tighter text-[#fad02c] italic uppercase font-['Space_Grotesk']">Dublin Brew</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#fad02c] dark:text-[#fad02c] hover:bg-[#393939] transition-all duration-75 ease-linear hover:skew-x-1 active:translate-x-1 active:translate-y-1 active:shadow-none p-2">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+<div class="bg-[#1c1b1b] h-[2px] w-full absolute bottom-0 left-0"></div>
+</div>
+</nav>
+<main>
+<!-- Hero Section (Street Art / Gritty) -->
+<section class="relative min-h-[90vh] flex flex-col justify-center pt-24 px-6 overflow-hidden border-b-8 border-primary">
+<div class="absolute inset-0 z-0">
+<img alt="Gritty urban street scene" class="w-full h-full object-cover opacity-60 grayscale brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt0JifWs15mnwlLM30qk3kLrZbrgzJwcOa4iSDW0meXQqtbO9tVREnawz2ruloTnS1iA2V1DV6yPzycave8muKpt68Q0q1hO5mu3dcKxlR4H_AzBgGFmrEpgT8gVLT6j_4Rl3Yck2dAr-jgPZ0iur_llorutdJklBcL6uPk435WNoy14FeZd-nHWlXgob-_c8ygLt9vfv5JIBYV6dHbylXMKz3Ft01-R7_R40weDzoo9HNavrlz5DaUJerJ_MK8gSufUO-oeea-Q"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-surface via-transparent to-primary/10"></div>
+<!-- Decorative "Street Art" overlay -->
+<div class="absolute top-1/4 right-1/12 rotate-12 opacity-30 select-none hidden md:block">
+<span class="text-[12rem] font-marker text-primary leading-none">D8</span>
+</div>
+</div>
+<div class="relative z-10 max-w-4xl space-y-6">
+<div class="bg-primary text-on-primary inline-block px-4 py-1 -skew-x-12 mb-4">
+<span class="font-bold text-sm tracking-[0.3em] uppercase">Est. 2014 • Brutalist Roasters</span>
+</div>
+<h1 class="font-headline text-7xl md:text-9xl font-black uppercase leading-none tracking-tighter text-white drop-shadow-[4px_4px_0px_#fad02c]">
+                Caffeine <br/> &amp; Chaos
+            </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface max-w-md font-medium leading-tight border-l-4 border-primary pl-4">
+                Hand-pressed high-octane fuel for the city's restless. Small batches. No compromises.
+            </p>
+<div class="flex gap-4 pt-8">
+<a class="px-10 py-5 bg-primary text-on-primary font-black text-xl uppercase tracking-tighter hover:bg-white transition-all poster-shadow active:translate-x-1 active:translate-y-1 active:shadow-none" href="#menu">
+                    The Manifesto
+                </a>
+</div>
+</div>
+<!-- Annotation -->
+<div class="absolute bottom-12 right-12 font-marker text-primary text-xl rotate-[-5deg] md:block hidden">
+            *Best served black
+        </div>
+</section>
+<!-- Story Section (Brutalist Layout) -->
+<section class="bg-surface py-32 px-6">
+<div class="max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[3/4] zine-border overflow-hidden bg-outline">
+<img alt="Industrial coffee setup" class="w-full h-full object-cover grayscale brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDolZ8UeDgOvjnMPRpPGm2VpxppJGw8Sv6zs0L9RRzZMBhQkizljYi4XaYY5phMbF3QUCW8usnhLmfIRuBqPnNXFEyzf4TRYA3HDZ-h2H_zjyoStk82LwzxWw49QpIQERHCZv4YcyUqRfAJTCrtI7pNjduZROzUeqoV6YFUqH3TIz48DMWzDY2HNkzaYw58LQN3RZMUNm6CkJihwjQ_1DWhxTcfP6R0iVfByDQKjW8-IPhk3p5BvZ375xCD195tNj8DI9DhzIKBw"/>
+</div>
+<div class="absolute -bottom-10 -left-6 bg-white p-6 zine-border max-w-[280px] -rotate-2">
+<p class="font-marker text-black text-2xl">"A modern public house for the thinking drinker."</p>
+</div>
+</div>
+<div class="lg:col-span-7 lg:pl-12 space-y-12">
+<h2 class="font-headline text-6xl md:text-8xl font-black uppercase italic tracking-tighter text-primary">Our Story</h2>
+<div class="space-y-8 text-on-surface text-xl leading-snug font-light">
+<p class="first-letter:text-6xl first-letter:font-black first-letter:mr-3 first-letter:float-left first-letter:text-primary">Born in the cobblestone lanes of Temple Bar, The Dublin Brew began with a single vintage roaster and a simple mission: to honor Ireland's literary spirit through the art of specialty coffee.</p>
+<p>We aren't just a cafe. We are a resistance against the mundane. Every bean is ethically sourced and roasted to mirror the complex, warm character of our home city.</p>
+</div>
+<button class="font-headline text-lg font-black uppercase tracking-widest text-primary border-b-4 border-primary pb-2 hover:text-white hover:border-white transition-all italic">
+                        The Full Chronicle →
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Daily Specials (Zine Mix) -->
+<section class="py-32 px-6 bg-surface-variant border-y-2 border-outline" id="menu">
+<div class="max-w-screen-xl mx-auto space-y-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b-4 border-primary pb-8">
+<div class="space-y-2">
+<span class="font-marker text-primary text-2xl">Secret Stash</span>
+<h2 class="font-headline text-6xl md:text-7xl font-black uppercase tracking-tighter">The Daily Edit</h2>
+</div>
+<p class="font-body text-xl italic max-w-xs text-white/60">Curated fresh every morning. No substitutions. No regrets.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Special 1 -->
+<div class="group relative bg-surface p-4 border-2 border-outline hover:border-primary transition-colors">
+<div class="aspect-square zine-border overflow-hidden mb-6">
+<img alt="Oat Milk Lavender Latte" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRLvgcdQyX_QI3RZnbwcjuzOHq6hwOcd_x_JNVHUBfQI1iKWCMnErxd0KmE-79glyJLmAAz8QfSy1yxsfwwgq5EW1FfJ6dQiX5POZiJjUu_YVMiajwO2XrfYjCunpsbNZqH4pyf6ZCSjaLYqKnD2lrYpvHuZ0nnmWbUc1ayWs6fQx0qDJZz4hYxWa8AlSEubPpTkIUongpL-N3isvpWf-m6kxO2sByz6f5V_8mTw_Lrzmd2eV_Gam_Z-BxjRglKKD8FEAX7--VtA"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl font-black uppercase leading-none text-white">Oat Milk Lavender Latte</h3>
+<span class="font-headline text-2xl font-black text-primary">€5.50</span>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-primary text-on-primary font-black text-[10px] uppercase tracking-widest">Floral &amp; Heavy</span>
+</div>
+<p class="font-marker text-primary/60 text-sm">*Barista's favorite</p>
+</div>
+</div>
+<!-- Special 2 -->
+<div class="group relative bg-surface p-4 border-2 border-outline hover:border-primary transition-colors md:translate-y-8">
+<div class="aspect-square zine-border overflow-hidden mb-6">
+<img alt="Guinness-Glazed Scones" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeaZigzLq5Bh5bROI9boJCzyEs9M5CjdGiSldQAztveHxdYiPC4iy-GUtwmtDncpIUQSExW2s8fDya0s9SPNSks6XVwrfGing7N22Zm95Ok5V3Q8pZKInx4Xsbc1a6ajBrba1s30PmOQ2mkUGxG37-sFvdC7CFS38ftMeQeU21d4P8VO-BlI02Tfda419eQ3pObu-TXcmNZh44IR6RJWIhNvWqktPsPU3QKsQKARfSTdPl6Wi5wqSVicoft2jeR2jz67mehQ8TOQ"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl font-black uppercase leading-none text-white">Guinness-Glazed Scones</h3>
+<span class="font-headline text-2xl font-black text-primary">€4.20</span>
+</div>
+<p class="text-sm font-medium text-white/50 uppercase">Stout reduction &amp; Irish sea salt</p>
+</div>
+</div>
+<!-- Special 3 -->
+<div class="group relative bg-surface p-4 border-2 border-outline hover:border-primary transition-colors">
+<div class="aspect-square zine-border overflow-hidden mb-6">
+<img alt="Concrete Pour Over" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHx1khprXbaRrO5eTppR0PoRIw8GxGh36JeoA4idfa78-2tacxUryostfdSH5GPNYEVXi1Kilruinu-xJYG-WT_iU7EWJYTTPvtgR6vq3VipTBhGczizp-HUvB6GgZaDgfnhUziE3pmu7M0xW0ssCEAT_j6M9agUQSxJmRGZ5D4CR3o5cnVjel-9BaU6uWm6Y_nYxwp3sXtEK4J2kmDXguPh_2U6OksXWgmGODW_1z8zN37GtV6fVzdccH68BhDLYyRe795gzEJg"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl font-black uppercase leading-none text-white">D8 Batch Brew</h3>
+<span class="font-headline text-2xl font-black text-primary">€4.00</span>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-white text-black font-black text-[10px] uppercase tracking-widest">Limited Batch</span>
+</div>
+</div>
+<div class="absolute -top-4 -right-4 font-marker bg-primary text-black px-4 py-2 rotate-12 z-10 text-xs">SOLDOUT? ASK!</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Find Us Section (Brutalist Location) -->
+<section class="py-32 px-6 bg-surface">
+<div class="max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border-8 border-primary overflow-hidden">
+<div class="p-12 space-y-12 bg-surface order-2 lg:order-1">
+<div class="space-y-4">
+<h2 class="font-headline text-6xl font-black uppercase tracking-tighter text-primary italic">Infiltrate</h2>
+<p class="font-body text-xl text-white/70">The heart of Temple Bar. Look for the black door.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div class="space-y-6">
+<h4 class="font-headline text-xs font-black uppercase tracking-[0.3em] text-primary">Operation Hours</h4>
+<ul class="space-y-3 font-medium text-white">
+<li class="flex justify-between border-b border-outline pb-1"><span>WKNDS</span> <span class="text-primary">09:00 - LATE</span></li>
+<li class="flex justify-between border-b border-outline pb-1"><span>WKDAYS</span> <span class="text-primary">07:30 - 18:00</span></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline text-xs font-black uppercase tracking-[0.3em] text-primary">Comms</h4>
+<address class="not-italic text-white space-y-1 font-medium">
+<p>12 Fownes Street Upper,</p>
+<p>Temple Bar, Dublin 2</p>
+<p class="pt-4 text-primary font-black text-xl italic tracking-tighter">+353 1 234 5678</p>
+</address>
+</div>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-4 px-8 py-4 bg-primary text-on-primary font-black uppercase tracking-widest hover:bg-white transition-all skew-hover" href="#">
+<span class="material-symbols-outlined">directions</span>
+<span>Get Directions</span>
+</a>
+</div>
+</div>
+<div class="h-[500px] lg:h-full relative overflow-hidden order-1 lg:order-2">
+<img alt="Map of Dublin Location" class="w-full h-full object-cover grayscale contrast-150 brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSB7oIXEwjQieYmqT9RNPNRsrL9E3HpgHeTtUGxyPXbtZEkHoyABrWeEXP4chFwsrzMqbpgTcg3snH59UGqsYx3Z2PAFtMB5WRRG8EoKmqvQmulK01vIGXZMWzeBVsX_Cu6DySTR1QPGjoGVpytUuOdJlsQ38sNTFQwBO8Z7SE-GwcLbuyEUh8ZKoeSIEWoKvq8O7mMf24Y2CyLBWwMM1QAm0qWX0lcon6IUkR92sv-3jxdQVkdWoQs6iuST5arfIo-l6ZwHJqBQ"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="w-16 h-16 bg-primary flex items-center justify-center -rotate-45 poster-shadow">
+<span class="material-symbols-outlined text-surface text-4xl rotate-45" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-[#131313] dark:bg-[#131313] w-full border-t-4 border-[#fad02c] rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 w-full">
+<div class="flex flex-col gap-6">
+<span class="text-xl font-bold text-[#f0f0f0] font-['Space_Grotesk'] uppercase tracking-tighter italic">DUBLIN 8 BRUTALIST ROASTERS</span>
+<p class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-[#c1c7d0]">©2024 DUBLIN 8 BRUTALIST ROASTERS. NO RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-4 md:justify-end items-center">
+<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-[#c1c7d0] transition-colors duration-100 hover:text-[#fad02c] hover:italic" href="#">INSTAGRAM</a>
+<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-[#c1c7d0] transition-colors duration-100 hover:text-[#fad02c] hover:italic" href="#">TWITTER</a>
+<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-[#c1c7d0] transition-colors duration-100 hover:text-[#fad02c] hover:italic" href="#">LOCATIONS</a>
+<a class="font-['Space_Grotesk'] text-xs font-medium tracking-widest uppercase text-[#c1c7d0] transition-colors duration-100 hover:text-[#fad02c] hover:italic" href="#">CONTACT</a>
+</div>
+</div>
+</footer>
+</body></html>
